@@ -7,10 +7,6 @@ const bodyParser = require("body-parser");
 
 dotenv.config({ path: "./config.env" });
 
-app.use("/", (req, res) => {
-  res.send("Application Running ✅💥⚡");
-});
-
 app.use(bodyParser.json());
 app.use("/api/v1/posts", postRoute);
 app.use("/api/v1/users", userRoute);
