@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 
 dotenv.config({ path: "./config.env" });
 
-app.use("/", () => {
+app.use("/", (req, res) => {
   res.send("Application Running ✅💥⚡");
 });
 
